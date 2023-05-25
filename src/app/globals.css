@@ -105,3 +105,8 @@ a {
     color-scheme: dark;
   }
 }
+@media (max-width: 500px) {
+  :root {
+    width: fit-content;
+  }
+}

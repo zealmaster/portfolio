@@ -83,7 +83,7 @@
 }
 
 .section ul li:hover {
-  color: blue;
+  color: rgb(87, 87, 136);
   font-size: x-large;
 }
 
@@ -146,6 +146,35 @@
   height: inherit;
 } 
 
+@media {
+  .main {
+    width: 100%;
+  }
+
+.heading {
+  min-height: 50vh;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio {
+  font-size: large;
+}
+.nav {
+  width: 100%;
+} 
+.userName{
+  font-size: x-large;
+}
+.section {
+  width: 100%;
+}
+.section:hover {
+  box-shadow: 0 0 0 4px rgb(195, 204, 209);
+}
+}
 .description {
   display: inherit;
   justify-content: inherit;
