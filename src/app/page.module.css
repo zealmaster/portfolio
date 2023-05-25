@@ -149,6 +149,7 @@
 @media {
   .main {
     width: 100%;
+    padding: 20px;
   }
 
 .heading {
@@ -170,11 +171,13 @@
 }
 .section {
   width: 100%;
+  margin: 20px;
 }
 .section:hover {
   box-shadow: 0 0 0 4px rgb(195, 204, 209);
 }
 }
+
 .description {
   display: inherit;
   justify-content: inherit;
