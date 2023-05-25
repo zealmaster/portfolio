@@ -50,7 +50,7 @@ export default function Home() {
             <li><Link href=' https://zealmaster.github.io/election-mata-naija/' target=' https://zealmaster.github.io/election-mata-naija/'>Election Mata Naija</Link></li>
             <li><Link href='https://ki-post-zealmaster.vercel.app/' target='https://ki-post-zealmaster.vercel.app/'>KI Post</Link></li>
             <li><Link href=' https://zealmaster.github.io/Text-To-Speech/' target=' https://zealmaster.github.io/Text-To-Speech/'>Text to Speech</Link></li>
-            <li><Link href=' hhttps://kingsley-onah.vercel.app/' target='https://kingsley-onah.vercel.app/'>Kingsley Onah portfolio</Link></li>
+            <li><Link href=' https://kingsley-onah.vercel.app/' target='https://kingsley-onah.vercel.app/'>Kingsley Onah portfolio</Link></li>
           </ul>
         </section>
       </div>
