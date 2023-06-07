@@ -70,7 +70,7 @@ const Portfolio = () => {
                 <div className={styles.sectionHeader} id='technology'>Technology Stack</div>
                 <section className={styles.sectionBody}>
                     <div className={styles.skillSection}>
-                       <Image src='/backend.png' width={200} height={200} alt='backend section'/> 
+                       <Image src='/backend.png' width={200} height={200} alt='backend section' className={styles.image}/> 
                     <div className={styles.skillList}>
                        <h3>Backend</h3>
                         <ul>
@@ -85,7 +85,7 @@ const Portfolio = () => {
                     </div>
 
                     <div className={styles.skillSection}>
-                    <Image src='/frontend.png' width={200} height={200} alt='frontend section'/>
+                    <Image src='/frontend.png' width={200} height={200} alt='frontend section' className={styles.image}/>
                     <div className={styles.skillList}>
                         <h3>Frontend</h3>
                         <ul>

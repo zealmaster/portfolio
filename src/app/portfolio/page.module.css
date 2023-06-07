@@ -73,5 +73,11 @@
 
 .skillSection {
   padding: 5px, 50px;
+  margin: 0, 70px;
+  width: 100%;
+}
+.image {
+  width: 150px;
+  height: 150px;
 }
 }
