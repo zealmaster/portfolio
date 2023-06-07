@@ -8,102 +8,6 @@
   margin: 0.5rem;
 }
 
-.profile_picture {
-  height: 200px;
-  width: 200px;
-  border-radius: 50%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  margin: 5px;
-  border-style: dotted;
-  border-color: white;
-}
-
-.heading {
-  min-height: 50vh;
-  width: 100%;
-  background-color: rgb(16, 16, 29);
-  color: white;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  position: sticky;
-  border-style: none;
-  padding: 10px;
-  border-bottom-right-radius: 30px;
-  border-bottom-left-radius: 30px;
-}
-.profile {
-  min-height: 50vh;
-  width: 100%;
-  background-color: rgb(16, 16, 29);
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-}
-
-.userName {
-  font-weight: bold;
-  font-size: xx-large;
-  margin-top: 3rem 1rem;
-  margin-left: 3rem;
-  padding-top: 10px;
-}
-
-.portfolio {
-  display: flex;
-  flex-direction: row;
-  padding: 20px;
-  font-size: xx-large;
-  font-weight: bold;
-  align-items: flex-start;
-}
-
-.section {
-  height: fit-content;
-  width: 100%;
-  padding: 10px;
-  margin: 30px 30px;
-  box-shadow: 2px 2px 3px 4px rgba(197, 190, 192, 0.2);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.section:hover {
-  font-size: large;
-  border-radius: 10px;
-  box-shadow: 0 0 0 10px rgb(195, 204, 209);
-  transition: 0.2s;
-}
-
-.section ul li:hover {
-  color: rgb(87, 87, 136);
-  font-size: x-large;
-}
-
-.sectionBody {
-  padding: 30px;
-  align-items: center;
-}
-.sectionBody ul {
-  list-style: none;
-}
-.sectionHeader {
-  background-color: rgb(195, 204, 209);
-  box-shadow: 5px 2px 4px 2px rgba(197, 190, 192, 0.2);
-  width: fit-content;
-  padding: 10px;
-  font-size: larger;
-  font-weight: 500;
-  border-radius: 10px;
-}
-
 .footer {
   display: flex; 
   flex-direction: row; 
@@ -114,7 +18,6 @@
   height: 50px;
   background-color:white;
   color: rgb(24, 5, 5);
-  position: fixed;
   bottom: 0;
   left: 0;
   border-top-width: 3px;
@@ -146,138 +49,13 @@
   height: inherit;
 } 
 
-@media {
+@media (max-width: 825px) {
   .main {
     width: 100%;
     padding: 20px;
   }
-
-.heading {
-  min-height: 50vh;
-  width: 100%;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
-.portfolio {
-  font-size: large;
-}
-.nav {
-  width: 100%;
-} 
-.userName{
-  font-size: x-large;
-}
-.section {
-  width: 100%;
-  margin: 20px;
-}
-.section:hover {
-  box-shadow: 0 0 0 4px rgb(195, 204, 209);
-}
-}
-
-.description {
-  display: inherit;
-  justify-content: inherit;
-  align-items: inherit;
-  font-size: 0.85rem;
-  max-width: var(--max-width);
-  width: 100%;
-  z-index: 2;
-  font-family: var(--font-mono);
-}
-
-.description a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.description p {
-  position: relative;
-  margin: 0;
-  padding: 1rem;
-  background-color: rgba(var(--callout-rgb), 0.5);
-  border: 1px solid rgba(var(--callout-border-rgb), 0.3);
-  border-radius: var(--border-radius);
-}
-
-.code {
-  font-weight: 700;
-  font-family: var(--font-mono);
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(25%, auto));
-  width: var(--max-width);
-  max-width: 100%;
-}
-
-.card {
-  padding: 1rem 1.2rem;
-  border-radius: var(--border-radius);
-  background: rgba(var(--card-rgb), 0);
-  border: 1px solid rgba(var(--card-border-rgb), 0);
-  transition: background 200ms, border 200ms;
-}
-
-.card span {
-  display: inline-block;
-  transition: transform 200ms;
-}
-
-.card h2 {
-  font-weight: 600;
-  margin-bottom: 0.7rem;
-}
-
-.card p {
-  margin: 0;
-  opacity: 0.6;
-  font-size: 0.9rem;
-  line-height: 1.5;
-  max-width: 30ch;
-}
-
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  padding: 4rem 0;
-}
-
-.center::before {
-  background: var(--secondary-glow);
-  border-radius: 50%;
-  width: 480px;
-  height: 360px;
-  margin-left: -400px;
-}
-
-.center::after {
-  background: var(--primary-glow);
-  width: 240px;
-  height: 180px;
-  z-index: -1;
-}
-
-.center::before,
-.center::after {
-  content: '';
-  left: 50%;
-  position: absolute;
-  filter: blur(45px);
-  transform: translateZ(0);
-}
-
-.logo {
-  position: relative;
-}
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   .card:hover {

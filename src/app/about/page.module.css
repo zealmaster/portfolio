@@ -1,0 +1,159 @@
+
+.profile_picture {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  border-style: dotted;
+  border-color: white;
+}
+
+.heading {
+  min-height: 50vh;
+  width: 100%;
+  background-color: rgb(16, 16, 29);
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: sticky;
+  border-style: none;
+  padding: 10px;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+.profile {
+  min-height: 50vh;
+  width: 100%;
+  background-color: rgb(16, 16, 29);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.userName {
+  font-weight: bold;
+  font-size: xx-large;
+  margin-top: 3rem 1rem;
+  margin-left: 3rem;
+  padding-top: 10px;
+}
+
+.portfolio {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  font-size: xx-large;
+  font-weight: bold;
+  align-items: flex-start;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 700px;
+  height: fit-content;
+  line-height: 1.5;
+  text-align: justify;
+  height: inherit;
+} 
+
+@media (max-width: 825px) {
+  .main {
+    width: 100%;
+    padding: 20px;
+  }
+
+.heading {
+  min-height: 50vh;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio {
+  font-size: large;
+}
+.nav {
+  width: 100%;
+} 
+.userName{
+  font-size: x-large;
+}
+}
+
+
+/* Enable hover only on non-touch devices */
+@media (hover: hover) and (pointer: fine) {
+  .card:hover {
+    background: rgba(var(--card-rgb), 0.1);
+    border: 1px solid rgba(var(--card-border-rgb), 0.15);
+  }
+
+  .card:hover span {
+    transform: translateX(4px);
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .card:hover span {
+    transform: none;
+  }
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .content {
+    padding: 4rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    margin-bottom: 120px;
+    max-width: 320px;
+    text-align: center;
+  }
+
+  .card {
+    padding: 1rem 2.5rem;
+  }
+
+  .card h2 {
+    margin-bottom: 0.5rem;
+  }
+
+  .center {
+    padding: 8rem 0 6rem;
+  }
+
+  .center::before {
+    transform: none;
+    height: 300px;
+  }
+
+  .description {
+    font-size: 0.8rem;
+  }
+
+  .description a {
+    padding: 1rem;
+  }
+
+  .description p,
+  .description div {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+  }
+}

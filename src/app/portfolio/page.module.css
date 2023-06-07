@@ -1,0 +1,74 @@
+.section {
+  height: fit-content;
+  width: 100%;
+  padding: 10px;
+  margin: 0px 30px;
+  box-shadow: 2px 2px 3px 4px rgba(197, 190, 192, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(rgb(231, 229, 229), rgb(221, 216, 217), rgb(173, 181, 197));
+}
+
+.section:hover {
+  font-size: large;
+  border-radius: 10px;
+  /* box-shadow: 0 0 0 10px rgb(195, 204, 209); */
+  transition: 0.2s;
+}
+
+/* .section ul li:hover {
+  color: rgb(87, 87, 136);
+  font-size: x-large;
+} */
+
+.sectionBody {
+  padding: 30px;
+  align-items: center;
+}
+.sectionBody ul {
+  list-style: none;
+}
+.sectionHeader {
+  background-color: rgb(195, 204, 209);
+  box-shadow: 5px 2px 4px 2px rgba(197, 190, 192, 0.2);
+  width: fit-content;
+  padding: 10px;
+  font-size: larger;
+  font-weight: 500;
+  border-radius: 10px;
+}
+
+.projectLink {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  box-shadow: 5px 2px 4px 2px rgba(197, 190, 192, 0.2);
+  margin: 5px;
+  width: 300px;
+}
+
+.skillSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  margin: 10px;
+  width: 400px;
+}
+.skillList {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 825px) {
+.section {
+  width: 100%;
+  margin: 20px;
+}
+.section:hover {
+  box-shadow: 0 0 0 4px rgb(195, 204, 209);
+}
+}
