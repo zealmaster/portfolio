@@ -71,4 +71,8 @@
 .section:hover {
   box-shadow: 0 0 0 4px rgb(195, 204, 209);
 }
+
+.skillSection {
+  padding: 5px, 50px;
+}
 }
