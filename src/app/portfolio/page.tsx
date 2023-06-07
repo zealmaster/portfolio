@@ -20,7 +20,7 @@ export const frontend = [
     description: ""},
    {title: 'KI Post',
     github: 'https://ki-post-zealmaster.vercel.app/',
-    demo: '',
+    demo: 'https://github.com/zealmaster/ki-post',
     description: "This project, KI Post is to demostrate the use of Next.js framework for frontend Reactjs applications."},
    {title: 'Text to Speech',
     github: 'https://zealmaster.github.io/Text-To-Speech/',
@@ -28,7 +28,7 @@ export const frontend = [
     description: "This is an application that converts text to speech. It also has the feature to upload text file and read out the content of the file."},
    {title: 'My Portfolio Site',
     github: 'https://kingsley-onah.vercel.app/',
-    demo: '',
+    demo: 'https://github.com/zealmaster/portfolio',
     description: "This is an application that converts text to speech. It also has the feature to upload text file and read out the content of the file."},
 ]
 
