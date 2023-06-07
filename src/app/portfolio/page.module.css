@@ -16,11 +16,6 @@
   transition: 0.2s;
 }
 
-/* .section ul li:hover {
-  color: rgb(87, 87, 136);
-  font-size: x-large;
-} */
-
 .sectionBody {
   padding: 30px;
   align-items: center;
@@ -58,7 +53,7 @@
   width: 400px;
 }
 .skillList {
-  display: flex;
+  display: inline;
   flex-direction: column;
 }
 

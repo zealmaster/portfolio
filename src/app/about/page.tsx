@@ -16,6 +16,7 @@ const About = () => {
            <div><Link href='#backend'>Backend projects</Link></div> 
            <div><Link href='#frontend'>Frontend projects</Link></div> 
            <div><Link href='#technology'>Skills</Link></div>
+           <div><Link href='#contact'>Contact me</Link></div>
            <span>&#9650;</span>
             </div>
       <div className={styles.profile}>

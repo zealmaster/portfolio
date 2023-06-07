@@ -1,0 +1,85 @@
+.section {
+  height: fit-content;
+  width: 100%;
+  padding: 10px;
+  margin: 0px 30px;
+  box-shadow: 2px 2px 3px 4px rgba(197, 190, 192, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(rgb(207, 206, 206), rgb(211, 202, 206), rgb(44, 42, 42));
+}
+
+.section:hover {
+  font-size: large;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+
+.sectionHeader {
+  background-color: rgb(195, 204, 209);
+  box-shadow: 5px 2px 4px 2px rgba(197, 190, 192, 0.2);
+  width: fit-content;
+  padding: 10px;
+  font-size: larger;
+  font-weight: 500;
+  border-radius: 10px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  box-shadow: 2px 2px 1px 2px rgba(197, 190, 192, 0.2);
+  padding: 10px;
+  margin: 20px;
+  height: fit-content;
+  font-weight: bold;
+}
+
+.form input {
+  height: 40px;
+  width: 400px;
+  border-color: green;
+  padding: 10px;
+  border-radius: 5px;
+}
+.form textarea {
+  width: 400px;
+  border-color: green;
+  padding: 10px;
+}
+.form button {
+  width: 200px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+  font-weight: bold;
+  border-style: none;
+  border-radius: 5px;
+  box-shadow: 0 0 0 4px rgb(43, 44, 44);
+}
+.form button:hover {
+  background-color: rgb(235, 235, 243);
+}
+
+@media (max-width: 825px) {
+.section {
+  width: 100%;
+  padding: 10px 30px;
+}
+.section:hover {
+  box-shadow: 0 0 0 4px rgb(195, 204, 209);
+}
+.form input {
+  width: 300px;
+}
+.form textarea {
+  width: 300px;
+}
+.form button {
+  width: 180px;
+  height: 30px;
+}
+}

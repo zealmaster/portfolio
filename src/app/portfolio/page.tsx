@@ -16,20 +16,20 @@ export const backend = [
 export const frontend = [
    {title: 'Election Mata Naija',
     github: 'https://github.com/zealmaster/election-mata-naija',
-    demo: 'https://zealmaster.github.io/election-mata-naija/',
+    demo: 'https://zealmaster.github.io/election-mata-naija',
     description: ""},
    {title: 'KI Post',
-    github: 'https://ki-post-zealmaster.vercel.app/',
+    github: 'https://ki-post-zealmaster.vercel.app',
     demo: 'https://github.com/zealmaster/ki-post',
     description: "This project, KI Post is to demostrate the use of Next.js framework for frontend Reactjs applications."},
    {title: 'Text to Speech',
-    github: 'https://zealmaster.github.io/Text-To-Speech/',
-    demo: '',
-    description: "This is an application that converts text to speech. It also has the feature to upload text file and read out the content of the file."},
+    github: 'https://github.com/zealmaster/Text-To-Speech',
+    demo: 'https://zealmaster.github.io/Text-To-Speech',
+    description: 'This is an application that converts text to speech. It also has the feature to upload text file and read out the content of the file.'},
    {title: 'My Portfolio Site',
-    github: 'https://kingsley-onah.vercel.app/',
-    demo: 'https://github.com/zealmaster/portfolio',
-    description: "This is an application that converts text to speech. It also has the feature to upload text file and read out the content of the file."},
+    github: 'https://github.com/zealmaster/portfolio',
+    demo: 'https://kingsley-onah.vercel.app',
+    description: ''},
 ]
 
 const Portfolio = () => {
@@ -39,9 +39,14 @@ const Portfolio = () => {
             <section className={styles.sectionBody}>
             <ul>
             {backend.map((project) => (
+                
                 <li key={project.title}>
-                <Link href={project.link} target="_blank">{project.title}</Link>
+                <div className={styles.projectLink}>
+                <Link href={project.link} target="_blank">
+                <Image src="/project.png" width={20} height={20} alt='demo-icon' />{project.title}</Link>
+                </div>
                 </li>
+              
             ))}
             </ul>
 </section>
