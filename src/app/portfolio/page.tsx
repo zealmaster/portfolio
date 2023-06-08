@@ -60,11 +60,11 @@ const Portfolio = () => {
                     <div className={styles.projectLink}>
                 <div>
                 <Link href={project.demo} target="_blank">
-                    <Image src="/demo-icon.jpg" width={30} height={30} alt='demon-icon' /> Demo</Link>
+                    <Image src="/demo-icon.jpg" width={20} height={20} alt='demon-icon' /> Demo</Link>
                 </div>
                 <div>
                 <Link href={project.github} target="_blank">
-                    <Image src="/github-142.svg" width={30} height={30} alt='github-icon' /> Github</Link>
+                    <Image src="/github-142.svg" width={20} height={20} alt='github-icon' /> Github</Link>
                 </div>
                 </div>
                 </li>

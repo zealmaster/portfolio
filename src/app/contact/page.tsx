@@ -10,11 +10,11 @@ const Contact = () => {
         <form>
             <div className={styles.form}>
         <label htmlFor='name'>Name </label> 
-        <input type='text' name="senderName" id='name' required/> 
+        <input type='text' name="senderName" id='name' placeholder='Your full name' required/> 
         <label htmlFor='phone'>Phone number</label> 
-        <input type='tel' name="phone" id='phone' required/> 
-        <label htmlFor='message'>Message</label>
-        <textarea  name="message" rows={20} id='message' /> <br />
+        <input type='tel' name="phone" id='phone' placeholder='Phone number' required/> 
+        <label htmlFor='message'>Message</label> 
+        <textarea  name="message" rows={20} id='message' placeholder='Type your message here...' /> <br />
         <button type="submit">Message me</button>
         </div>
         </form>
