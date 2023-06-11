@@ -1,0 +1,92 @@
+.navbar {
+  min-height: 10vh;
+  width: 100%;
+  background-color: rgb(16, 16, 29);
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  padding: 0 10px;
+  opacity: 0.98;
+  margin: 10px;
+}
+.navLink {
+  min-height: 10vh;
+  width: 100%;
+  background-color: rgb(16, 16, 29);
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  opacity: 0.98;
+}
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+ padding: 1px;
+ border: 1px solid white;
+ /* right: 0; */
+ top: 0;
+  
+}
+.hamburger div{
+  display: flex;
+  flex-direction: column;
+  border-style: block;
+  top: 0;
+  margin: 3px;
+  width: 25px;
+  border: 1px solid;
+}
+
+.hamburger:hover{
+  cursor: pointer;
+}
+.sideMenu {
+  margin: 10vh 10px;
+width: 300px;
+color: white;
+  height: 50vh;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: ;
+  background-color: rgb(16, 16, 29);
+  padding: 30px 50px;
+  position: absolute;
+  z-index: 3;
+  display: none;
+}
+.sideMenu div {
+  height: 50px;
+  align-items: center;
+}
+.sideMenu div:hover {
+  background-color: wheat;
+  color: black;
+}
+.hideSideMenu {
+  left: -300px;
+  display: none;
+}
+@media screen and (max-width: 825px) {
+  .navbar {
+    min-height: 10vh;
+    padding: 0 30px;
+    margin: 0 10px;
+  }
+  .sideMenu {
+   display: block;
+   
+  }
+  
+.navLink {
+ display: none;
+}
+}

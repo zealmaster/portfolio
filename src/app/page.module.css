@@ -6,13 +6,12 @@
   padding: 0rem 0.5rem;
   line-height: 1.5;
   margin: 0.5rem;
-  /* background: linear-gradient(rgb(231, 229, 229), rgb(221, 216, 217), rgb(173, 181, 197)); */
 }
 
 .footer {
   display: flex; 
   flex-direction: row; 
-  justify-content: center; 
+  justify-content: start; 
   align-items: center;
   margin: auto; 
   width: 100%;
@@ -29,7 +28,6 @@
   opacity:1;
   padding: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  clear: both;
 }
 .beforeFooter {
   height: 50px;
@@ -53,7 +51,8 @@
 @media (max-width: 825px) {
   .main {
     width: 100%;
-    padding: 20px;
+    padding: 20px 20px;
+    margin: 0rem 0.5rem;
   }
 }
 

@@ -23,8 +23,7 @@
   position: sticky;
   border-style: none;
   padding: 10px;
-  /* border-bottom-right-radius: 30px;
-  border-bottom-left-radius: 30px; */
+  margin: 5px 10px 0px 10px;
 }
 .profile {
   min-height: 50vh;
@@ -79,6 +78,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 30px;
 }
 
 .portfolio {

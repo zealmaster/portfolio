@@ -11,7 +11,7 @@ const About = () => {
            Hi! I am glad you made it here. You can call me Kingsley, or K.I., a <b>brilliant and creative Web Developer</b>.
            I love to handle challenging projects. I know that is why you are here because you have a challenge for me.
            </div>
-            <h2>Projects & skills</h2>
+            <h2></h2>
             <span>&#9660;</span>
            <div><Link href='#backend'>Backend projects</Link></div> 
            <div><Link href='#frontend'>Frontend projects</Link></div> 
