@@ -65,7 +65,7 @@
   padding: 10px 30px;
 }
 .section:hover {
-  box-shadow: 0 0 0 4px rgb(195, 204, 209);
+  /* box-shadow: 0 0 0 4px rgb(195, 204, 209); */
 }
 
 .skillSection {

@@ -6,13 +6,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 2px 2px 3px 4px rgba(197, 190, 192, 0.2);
+  /* box-shadow: 2px 2px 3px 4px rgba(197, 190, 192, 0.2); */
   background: linear-gradient(rgb(207, 206, 206), rgb(211, 202, 206), rgb(44, 42, 42));
 }
 
 .section:hover {
   font-size: large;
-  border-radius: 10px;
   transition: 0.2s;
 }
 
@@ -79,7 +78,7 @@
   padding: 10px 30px;
 }
 .section:hover {
-  box-shadow: 0 0 0 4px rgb(195, 204, 209);
+  /* box-shadow: 0 0 0 4px rgb(195, 204, 209); */
 }
 .form input {
   width: 300px;
