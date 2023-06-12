@@ -10,7 +10,7 @@ const Contact = () => {
 
     const handleSubmit = async (e:any) => {
         e.preventDefault()
-        const res = await fetch('http://kingsley-onah.vercel.app/contact', {
+        const res = await fetch('http://kingsley-onah.vercel.app/api/contact', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
