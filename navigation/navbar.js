@@ -4,20 +4,20 @@ import styles from './page.module.css'
 import Link from 'next/link'
 import { useState } from 'react'
 import NavLink from './navlink'
+import * as AiOutlineClose from 'react-icons/ai'
 
 const Navbar = () => {
     const [open, setOpen] = useState(false)
     const navMenu = () => setOpen(!open)
-    console.log(open)
     return (
         <>
         <div className={styles.navbar}>
-            <div className={styles.hamburger} onClick={navMenu}>
+            <div className={open ? styles.closeIcon : styles.hamburger} onClick={navMenu}>
             <div></div>
             <div ></div>
             <div ></div>
+            <p><AiOutlineClose.AiOutlineClose/>Close</p>
             </div>
-            {/* <NavLink /> */}
             {open  && <NavLink/>}
         </div>
         <div className={open ? styles.sideMenu : styles.hideSideMenu}>
