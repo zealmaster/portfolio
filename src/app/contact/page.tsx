@@ -13,7 +13,8 @@ function Contact() {
         const res = await fetch('https://kingsley-onah.vercel.app/api/contact', {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
+                'Access-Control-Allow-Origin': 'https://kingsley-onah-git-main-zealmaster.vercel.app/, http://localhost:3000'
             },
             body: JSON.stringify({ email, name, message })
         })
