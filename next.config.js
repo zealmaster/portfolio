@@ -6,7 +6,6 @@ module.exports = {
       return [
         {
           source: '/api/contact',
-          destination: 'https://kingsley-onah.vercel.app/api/contact',
           headers: [
             {
               key: 'Access-Control-Allow-Origin',
