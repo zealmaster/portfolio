@@ -6,11 +6,19 @@ type data = {
     name: string,
     message: string,
 }
+
 export const POST = async (req:Request, res: Response) => {
+        const origin = req.headers.get('origin')
         const data: data = await req.json()
         const { email, name, message } = data;
         sendEmail(email, name, message)
-return NextResponse.json({email, name, message})
+return NextResponse.json({email, name, message}, {
+  headers: {
+    'Access-Control-Allow-Origin': origin || '*',
+    'Content-Type': 'application/json'
+}
+}
+ )
 }
 
 const sendEmail = async (email: string, name: string, message: string) => {
