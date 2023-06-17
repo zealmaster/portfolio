@@ -1,20 +1,5 @@
-import { NextResponse } from "next/server"
-import * as nodemailer from 'nodemailer'
 
-type data = {
-    email: string,
-    name: string,
-    message: string,
-}
-export const POST = async (req:Request, res: Response) => {
-        const data: data = await req.json()
-        const { email, name, message } = data;
-        sendEmail(email, name, message)
-return NextResponse.json({email, name, message})
-}
-
-
-export const sendEmail = async (email: string, name: string, message: string) => {
+const sendEmail = async (email, name, message) => {
     const transporter = nodemailer.createTransport({
         host: process.env.EMAIL_HOST,
         port: Number(process.env.EMAIL_PORT),
@@ -46,4 +31,4 @@ export const sendEmail = async (email: string, name: string, message: string) =>
       await transporter.sendMail(mailOptions);
       await transporter.sendMail(mailOptions1);
 }
-
+export default sendEmail;
