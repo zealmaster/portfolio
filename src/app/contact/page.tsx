@@ -14,7 +14,6 @@ function Contact() {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'Access-Control-Allow-Origin': 'https://https://kingsley-onah.vercel.app, http://localhost:3000'
             },
             body: JSON.stringify({ email, name, message })
         })
