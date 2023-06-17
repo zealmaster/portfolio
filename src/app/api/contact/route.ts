@@ -13,8 +13,7 @@ export const POST = async (req:Request, res: Response) => {
 return NextResponse.json({email, name, message})
 }
 
-
-export const sendEmail = async (email: string, name: string, message: string) => {
+const sendEmail = async (email: string, name: string, message: string) => {
     const transporter = nodemailer.createTransport({
         host: process.env.EMAIL_HOST,
         port: Number(process.env.EMAIL_PORT),

@@ -13,7 +13,7 @@ function Contact() {
         const res = await fetch('https://kingsley-onah.vercel.app/api/contact', {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/json',
+                'Content-Type': 'application/json'
             },
             body: JSON.stringify({ email, name, message })
         })
