@@ -1,7 +1,5 @@
 "use client"
-import Image from 'next/image'
 import styles from './page.module.css'
-import Link from 'next/link'
 import { useState } from 'react'
 function Contact() {
     const [email, setEmail] = useState('')
@@ -14,7 +12,7 @@ function Contact() {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'Access-Control-Allow-Origin': 'https://kingsley-onah-git-main-zealmaster.vercel.app/, http://localhost:3000'
+                'Access-Control-Allow-Origin': 'https://kingsley-onah-git-main-zealmaster.vercel.app/, https://kingsley-onah-zealmaster.vercel.app/, http://localhost:3000'
             },
             body: JSON.stringify({ email, name, message })
         })

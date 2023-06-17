@@ -2,7 +2,7 @@ import { NextResponse } from "next/server"
 
 const allowOrigins = process.env.NODE_ENV === 'production' 
 ? ['https://kingsley-onah.vercel.app/','https://kingsley-onah-git-main-zealmaster.vercel.app/', 
-'https://kingsley-onah-zealmaster.vercel.app'] 
+'https://kingsley-onah-zealmaster.vercel.app', 'https://kingsley-onah-zealmaster.vercel.app/'] 
 : ['http://localhost:3000']
 
 export const middleware = (request: Request) => {
