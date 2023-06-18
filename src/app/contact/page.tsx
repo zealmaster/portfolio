@@ -8,11 +8,12 @@ function Contact() {
 
     const handleSubmit = async (e: any) => {
         e.preventDefault()
-        const res = await fetch('https://kingsley-onah.vercel.app/api/contact', {
+        const res = await fetch('http://localhost:3000/api/contact', {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/json',
-
+                'Content-Type': 'application/json', 
+                'Access-Control-Allow-Methods': 'GET, POST, OPTIONS', 
+                'Access-Control-Allow-Origin':'*'
             },
             body: JSON.stringify({ email, name, message })
         })

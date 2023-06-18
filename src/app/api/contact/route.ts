@@ -7,7 +7,7 @@ type data = {
     message: string,
 }
 
-export const POST = async (req:Request, res: Response) => {
+export const POST = async (req:Request) => {
         const origin = req.headers.get('origin')
         const data: data = await req.json()
         const { email, name, message } = data;

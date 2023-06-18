@@ -57,6 +57,7 @@
   padding: 10px;
   border-style: none;
 }
+
 .form button {
   width: 200px;
   height: 30px;
@@ -70,6 +71,7 @@
 }
 .form button:hover {
   background-color: rgb(235, 235, 243);
+  cursor: pointer;
 }
 
 @media (max-width: 825px) {

@@ -1,4 +1,4 @@
-
+import * as nodemailer from 'nodemailer'
 const sendEmail = async (email, name, message) => {
     const transporter = nodemailer.createTransport({
         host: process.env.EMAIL_HOST,
