@@ -1,4 +1,5 @@
 "use client"
+import axios from 'axios'
 import styles from './page.module.css'
 import { useState } from 'react'
 function Contact() {
@@ -8,15 +9,23 @@ function Contact() {
 
     const handleSubmit = async (e: any) => {
         e.preventDefault()
-        const res = await fetch('https://kingsley-onah.verce.app/api/contact', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json', 
-                'Access-Control-Allow-Methods': 'GET, POST, OPTIONS', 
-                'Access-Control-Allow-Origin':'*'
-            },
-            body: JSON.stringify({ email, name, message })
-        })
+        // const res = await fetch('https://kingsley-onah.vercel.app/api/contact', {
+        //     method: 'POST',
+        //     headers: {
+        //         'Content-Type': 'application/json', 
+        //     },
+        //     body: JSON.stringify({ email, name, message })
+        // })
+        try {
+            const res = await axios.post('/api/contact', {
+              email,
+              name,
+              message
+            });
+            // Handle the response
+          } catch (error) {
+            // Handle any error that occurs
+          }
     }
     return (
         <div id='contact' className={styles.section}>
