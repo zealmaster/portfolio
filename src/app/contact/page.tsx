@@ -8,7 +8,7 @@ function Contact() {
 
     const handleSubmit = async (e: any) => {
         e.preventDefault()
-        const res = await fetch('http://kingsley-onah.verce.app/api/contact', {
+        const res = await fetch('https://kingsley-onah.verce.app/api/contact', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json', 
