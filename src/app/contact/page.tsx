@@ -23,6 +23,7 @@ function Contact() {
               message
             });
             // Handle the response
+            console.log(await res.status)
           } catch (error) {
             // Handle any error that occurs
           }

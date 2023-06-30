@@ -116,6 +116,7 @@ const Portfolio = () => {
                         <ul>
                             <li>Git/Github</li>
                             <li>Docker</li>
+                            <li>AWS</li>
                         </ul>
                     </div>
                 </section>

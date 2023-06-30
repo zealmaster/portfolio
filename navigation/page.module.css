@@ -9,7 +9,7 @@
   align-items: center;
   padding: 0 10px;
   opacity: 0.98;
-  margin: 10px;
+  /* margin: 10px; */
 }
 .navLink {
   min-height: 10vh;
@@ -29,8 +29,6 @@
   justify-content: space-between;
   align-items: center;
  padding: 1px;
- border: 1px solid white;
- /* right: 0; */
  top: 0;
   
 }
@@ -40,7 +38,7 @@
   border-style: block;
   top: 0;
   margin: 3px;
-  width: 25px;
+  width: 20px;
   border: 1px solid;
 }
 .hamburger p{
@@ -48,21 +46,16 @@
   
 }
 .closeIcon {
-  border: 1px solid white;
   width: fit-content;
   height: 50px;
   padding: 5px;
-  /* display: flex;
-  flex-direction: row; */
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 .closeIcon p {
   display: block;
   color: red;
-}
-.closeIcon p {
- cursor: pointer;
 }
 
 .closeIcon div:nth-child(1) {
@@ -84,15 +77,16 @@
 }
 .sideMenu {
   margin: 10vh 10px;
-width: 300px;
-color: white;
-  height: 50vh;
-  top: 0;
+  width: 200px;
+  color: white;
+  height: fit-content;
+  top: 11px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: ;
+  justify-content: center;
   background-color: rgb(16, 16, 29);
+  opacity: 0.90;
   padding: 30px 50px;
   position: absolute;
   z-index: 3;
@@ -113,12 +107,12 @@ color: white;
 @media screen and (max-width: 825px) {
   .navbar {
     min-height: 10vh;
-    padding: 0 30px;
-    margin: 0 10px;
+    padding: 0 2PX;
+    margin: 0;
   }
   .sideMenu {
    display: block;
-   
+   margin: 50px 0;
   }
   
 .navLink {
