@@ -39,7 +39,7 @@ export default function RootLayout({
         <Link href="mailto:onahkingsleyijuo@gmail.com" target="mailto:onahkingsleyijuo@gmail.com">
           <Image src="/gmail-icon-logo-svgrepo-com.svg" width={15} height={15} alt='gmail logo'/>
           </Link></div>
-      <p>&copy; 2023 Kingsley Ijuo Onah.</p> 
+      <p>&copy; 2023 Kingsley Ijuo Onah</p> 
       </div> 
 
         </div>
