@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: "Kingsley onah's portfolio",
-  description: 'Kingsley Ijuo Onah is fullstack web developer. A savvy with a perfect mix of creativity and high intellectual powers.',
+  description: 'Kingsley Ijuo Onah is a fullstack web developer. A savvy engineer with a perfect mix of creativity and high intellectual powers.',
 }
 
 export default function RootLayout({
