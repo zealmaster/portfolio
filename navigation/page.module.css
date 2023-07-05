@@ -1,5 +1,5 @@
 .navbar {
-  min-height: 10vh;
+  min-height: 7vh;
   width: 100%;
   background-color: rgb(16, 16, 29);
   color: white;
@@ -10,7 +10,7 @@
   padding: 0 10px;
 }
 .navLink {
-  min-height: 10vh;
+  min-height: 6vh;
   width: 100%;
   background-color: rgba(0, 0, 70, 0.3);
   color: white;
@@ -107,13 +107,13 @@
 }
 @media screen and (max-width: 825px) {
   .navbar {
-      min-height: 10vh;
+      /* min-height: 10vh; */
       padding: 0 2PX;
       margin: 0;
   }
   .sideMenu {
       display: block;
-      margin: 55px 0;
+      margin: 39px 0;
   }
   
   .navLink {
@@ -121,7 +121,7 @@
   }
   .hamburger {
       right: 20px;
-      top: 20px;
+      top: 13px;
       align-items: flex-end;
       position: absolute;
   }

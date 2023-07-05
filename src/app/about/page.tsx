@@ -19,6 +19,7 @@ const About = () => {
            <div><Link href='#contact'>Contact me</Link></div>
            <span>&#9650;</span>
             </div>
+        <div className={styles.profileCon}>
       <div className={styles.profile}>
         <div>
         <Image className={styles.profile_picture}
@@ -31,7 +32,8 @@ const About = () => {
         <div className={styles.userName}><Link href='https://linkedin.com/in/kingsley-ijuo-onah' target='https://linkedin.com/in/kingsley-ijuo-onah'> 
         KINGSLEY IJUO ONAH</Link></div>
         <div><h3>Fullstack Developer</h3></div>
-        <div>JavaScript, NodeJs, NestJs, NextJs, MySQL</div>
+        <div className={styles.stacks}>JavaScript, NodeJs, NestJs, NextJs, MySQL</div>
+        </div>
         </div>
         </div>
     )
