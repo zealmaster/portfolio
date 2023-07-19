@@ -12,13 +12,7 @@ export const POST = async (req:Request) => {
         const data: data = await req.json()
         const { email, name, message } = data;
         sendEmail(email, name, message)
-return NextResponse.json({email, name, message}, {
-  headers: {
-    'Access-Control-Allow-Origin': origin || '*',
-    'Content-Type': 'application/json'
-}
-}
- )
+return NextResponse.json({email, name, message})
 }
 
 const sendEmail = async (email: string, name: string, message: string) => {
