@@ -4,6 +4,7 @@ import Navbar from '../../navigation/navbar'
 import Image from 'next/image'
 import styles from './page.module.css'
 import Link from 'next/link'
+import { Analytics } from '@vercel/analytics/react';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -22,6 +23,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <Navbar />
         {children}
+        <Analytics />
         <div className={styles.main}>
         <div className={styles.beforeFooter}></div>
       <div className={styles.footer}> 
