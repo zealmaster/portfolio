@@ -8,7 +8,7 @@ const About = () => {
         <div className={styles.portfolio}><h1>Web Developer</h1></div>
           <div className={styles.nav}>
           <div> 
-           Hi! I am glad you made it here. You can call me Kingsley, or K.I., a <b>brilliant and creative Web Developer</b>.
+           Hi, <br />I am glad you made it here. You can call me Kingsley, or K.I., a <b>brilliant and creative Web Developer</b>.
            I love to handle challenging projects. I know that is why you are here because you have a challenge for me.
            </div>
             <h2></h2>
