@@ -8,7 +8,6 @@ type data = {
 }
 
 export const POST = async (req:Request) => {
-        const origin = req.headers.get('origin')
         const data: data = await req.json()
         const { email, name, message } = data;
         sendEmail(email, name, message)
