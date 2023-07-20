@@ -12,20 +12,20 @@ type data = {
 export const POST = async (req:Request) => {
         const data: data = await req.json()
         const { email, name, message } = data;
-        sendEmail(email, name, message)
+        await sendEmail(email, name, message)
 return NextResponse.json({email, name, message})
 }
 
 const sendEmail = async (email: string, name: string, message: string) => {
     const transporter = nodemailer.createTransport({
-        host: process.env.EMAIL_HOST,
-        port: Number(process.env.EMAIL_PORT),
-        secure: true,
-        auth: {
-          user: process.env.EMAIL_USER,
-          pass: process.env.EMAIL_PASSWORD,
-        },
-      });
+      host: process.env.EMAIL_HOST,
+      port: Number(process.env.EMAIL_PORT),
+      secure: true,
+      auth: {
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASSWORD,
+      },
+    });
       const mailOptions = {
         from: process.env.EMAIL_USER,
         to: process.env.EMAIL_USER,
