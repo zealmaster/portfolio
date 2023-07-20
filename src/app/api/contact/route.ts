@@ -45,7 +45,11 @@ const sendEmail = async (email: string, name: string, message: string) => {
                 <div>Thank you<p>Best regards,</p></div> 
                 <div>Kingsley Onah</div></div></html>`,
       };
-      await transporter.sendMail(mailOptions);
+      try {
+        await transporter.sendMail(mailOptions);
       await transporter.sendMail(mailOptions1);
+      console.log("emeil was sent successfully")
+    }catch(error) {console.log(error)};
+      
 }
 
