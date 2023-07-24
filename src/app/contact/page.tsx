@@ -11,18 +11,18 @@ function Contact() {
 
     const handleSubmit = async (e: any) => {
         e.preventDefault()    
-        // try {
-        //     const res = await axios.post('/api/contact', {
-        //       email,
-        //       name,
-        //       message
-        //     });
-        //     // Handle the response
-        //     if (res.status === 200) setModalOpen(true)
-        //   } catch (error) {
-        //     // Handle any error that occurs
-        //     console.log(error)
-        //   }
+        try {
+            const res = await axios.post('/api/contact', {
+              email,
+              name,
+              message
+            });
+            // Handle the response
+            if (res.status === 200) setModalOpen(true)
+          } catch (error) {
+            // Handle any error that occurs
+            console.log(error)
+          }
         
         setModalOpen(true)
     }
