@@ -21,6 +21,7 @@ const sendEmail = async (email: string, name: string, message: string) => {
       host: process.env.EMAIL_HOST,
       port: Number(process.env.EMAIL_PORT),
       secure: true,
+      service: 'Gmail',
       auth: {
         user: process.env.EMAIL_USER,
         pass: process.env.EMAIL_PASSWORD,
@@ -37,7 +38,7 @@ const sendEmail = async (email: string, name: string, message: string) => {
       const mailOptions1 = {
         from: process.env.EMAIL_USER,
         to: email,
-        subject: `Automated response from Kingsley Onah's website`,
+        subject: `Automated Response from Kingsley Onah`,
         text: `From Email: ${email} Name: ${name} Message: ${message}`,
         html: `<html><div><p>Dear ${name},</p><div>Thank you for contacting me. 
                 Your message was well received<p>Note that this is an automated response. 
@@ -48,7 +49,6 @@ const sendEmail = async (email: string, name: string, message: string) => {
       try {
         await transporter.sendMail(mailOptions);
       await transporter.sendMail(mailOptions1);
-      console.log("emeil was sent successfully")
     }catch(error) {console.log(error)};
       
 }
