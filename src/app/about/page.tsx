@@ -23,7 +23,7 @@ const About = () => {
       <div className={styles.profile}>
         <div>
         <Image className={styles.profile_picture}
-        src="/profile_picture.jpg"
+        src="/myPicture.jpg"
         width={500}
         height={500}
         alt="Picture of the author"
