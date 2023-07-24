@@ -18,6 +18,9 @@ const About = () => {
            <div><Link href='#technology'>Skills</Link></div>
            <div><Link href='#contact'>Contact me</Link></div>
            <span>&#9650;</span>
+           <div className={styles.resume}>
+           <a href="path/to/your/file.pdf" download="Kingsley_Onah's_CV.pdf">Resume</a>
+           </div>
             </div>
         <div className={styles.profileCon}>
       <div className={styles.profile}>

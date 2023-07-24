@@ -103,6 +103,17 @@
   font-weight: 600;
 }
 
+.resume {
+  padding: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  border-radius: 20px;
+  color: rgb(164, 233, 173);
+  font-weight: 600;
+  font-size: 24px;
+}
 @media (max-width: 825px) {
   .main {
     width: 100%;
