@@ -10,20 +10,25 @@ function Contact() {
     const [modalOpen, setModalOpen] = useState(false)
 
     const handleSubmit = async (e: any) => {
-        e.preventDefault()       
-        try {
-            const res = await axios.post('/api/contact', {
-              email,
-              name,
-              message
-            });
-            // Handle the response
-            if (res.status === 200) setModalOpen(true)
-          } catch (error) {
-            // Handle any error that occurs
-            console.log(error)
-          }
+        e.preventDefault()    
+        // try {
+        //     const res = await axios.post('/api/contact', {
+        //       email,
+        //       name,
+        //       message
+        //     });
+        //     // Handle the response
+        //     if (res.status === 200) setModalOpen(true)
+        //   } catch (error) {
+        //     // Handle any error that occurs
+        //     console.log(error)
+        //   }
+        
         setModalOpen(true)
+    }
+    const closeModal = () => {
+        setModalOpen(false);
+        window.location.reload();
     }
     return (
         <div id='contact' className={styles.section}>
@@ -68,7 +73,8 @@ function Contact() {
             </div>
             <Modal
                 isOpen = {modalOpen}
-                onRequestClose = {() => setModalOpen(false)}
+                onRequestClose = {() => closeModal()}
+                className={styles.modal_container}
             >
                 <div className={styles.modal}>Message sent successfully</div>
             </Modal>
