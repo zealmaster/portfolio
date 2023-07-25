@@ -21,6 +21,9 @@ const About = () => {
            <div className={styles.resume}>
            <a href="/Kingsley_Onah_CV.pdf" download="Kingsley_Onah_CV.pdf">Resume</a>
            </div>
+           <div className={styles.resume}>
+           <a href='tel:+2349120820328'>Call me</a>
+           </div>
             </div>
         <div className={styles.profileCon}>
       <div className={styles.profile}>

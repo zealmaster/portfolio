@@ -3,6 +3,8 @@ import axios from 'axios'
 import styles from './page.module.css'
 import { useState } from 'react'
 import Modal from 'react-modal';
+import Link from 'next/link';
+import Image from 'next/image';
 function Contact() {
     const [email, setEmail] = useState('')
     const [name, setName] = useState('')
@@ -33,7 +35,25 @@ function Contact() {
     return (
         <div id='contact' className={styles.section}>
             <div className={styles.sectionHeader}>Contact Me</div>
-            <div>Send me a message by filling the form below</div>
+        
+        <div className={styles.socialMedia}>
+            <div >
+        <Link href="https://www.linkedin.com/in/kingsley-ijuo-onah" target="linkedin.com/in/kingsley-ijuo-onah">
+        <Image src="/linkedin.png" width={15} height={15} alt='LinkedIn logo'/> <span>LinkedIn</span>
+        </Link>
+            </div>
+            <div >
+        <Link href="https://github.com/zealmaster" target="https://github.com/zealmaster">
+          <Image src="/github-142.svg" width={15} height={15} alt='github logo'/> <span>Github</span>
+          </Link>
+          </div>
+         <div >
+        <Link href="mailto:onahkingsleyijuo@gmail.com" target="mailto:onahkingsleyijuo@gmail.com">
+          <Image src="/gmail-icon-logo-svgrepo-com.svg" width={15} height={15} alt='gmail logo'/> <span>Email</span>
+          </Link></div>
+            </div>
+
+            <div>For question, chat or further enquiry kindly send me a message using the form below.</div>
             <div>
                 <form onSubmit={handleSubmit}>
                     <div className={styles.form}>

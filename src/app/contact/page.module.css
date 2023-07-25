@@ -99,13 +99,24 @@
   left: 34.6%;
   font-weight: 500;
 }
+
+.socialMedia {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  padding-bottom: 10px;
+}
+.socialMedia span {
+  color: rgb(66, 72, 160);
+}
 @media (max-width: 825px) and (min-width: 120px) {
 .section {
   width: 100%;
   padding: 10px 30px;
 }
-.section:hover {
-  /* box-shadow: 0 0 0 4px rgb(195, 204, 209); */
+.socialMedia {
+  display: flex;
+  flex-direction: row;
 }
 .form input {
   width: 300px;
