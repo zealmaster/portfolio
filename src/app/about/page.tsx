@@ -19,7 +19,7 @@ const About = () => {
            <div><Link href='#contact'>Contact me</Link></div>
            <span>&#9650;</span>
            <div className={styles.resume}>
-           <a href="/Kingsley_Onah_CV.pdf" download="Kingsley_Onah_CV.pdf">Resume</a>
+           <a href="/Kingsley_Onah_CV.pdf" download="Kingsley_Onah_CV.pdf">Download my CV</a>
            </div>
            <div className={styles.resume}>
            <a href='tel:+2349120820328'>Call me</a>

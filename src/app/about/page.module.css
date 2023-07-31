@@ -113,6 +113,7 @@
   color: rgb(164, 233, 173);
   font-weight: 600;
   font-size: 24px;
+  margin: 5px;
 }
 @media (max-width: 825px) {
   .main {
