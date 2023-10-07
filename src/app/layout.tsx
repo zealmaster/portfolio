@@ -1,12 +1,12 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
+import { Roboto } from 'next/font/google'
 import Navbar from '../../navigation/navbar'
 import Image from 'next/image'
 import styles from './page.module.css'
 import Link from 'next/link'
 import { Analytics } from '@vercel/analytics/react';
 
-const inter = Inter({ subsets: ['latin'] })
+const roboto = Roboto({weight: ['400', '500', '700', '900'], subsets: ['latin']}, )
 
 export const metadata = {
   title: "Kingsley onah's portfolio",
@@ -19,8 +19,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
+    <html lang="en" className={roboto.className}>
+      <body className={roboto.className}>
         <Navbar />
         {children}
         <Analytics />
