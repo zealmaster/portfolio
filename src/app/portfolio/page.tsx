@@ -4,6 +4,11 @@ import Link from 'next/link'
 
 export const backend = [
     {
+        title: "Tudu",
+        link: "https://github.com/zealmaster/tudu",
+        description: ""
+    },
+    {
         title: "NexxDoor",
         link: "https://github.com/zealmaster/nextdoor",
         description: ""
