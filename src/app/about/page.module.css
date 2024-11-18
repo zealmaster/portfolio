@@ -25,6 +25,7 @@
   animation: gradient 6s ease infinite;
   background-size: 200% auto;
   font-weight: 600;
+  letter-spacing: 1.5px;
 }
 
 .profile {
@@ -106,11 +107,18 @@
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.24);
-  border-radius: 20px;
+  border-radius: 10px;
   color: rgb(164, 233, 173);
   font-weight: 600;
-  font-size: 24px;
+  font-size: 20px;
   margin: 5px;
+}
+.resume a {
+  display:  flex;
+  flex-direction: column;
+  color: white;
+  font-size: 16px;
+  align-items: center;
 }
 
 @media (max-width: 450px) {
